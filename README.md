@@ -139,6 +139,12 @@ cd ~/android/lineage/vendor/motorola
 git clone -b lineage-22.2 https://github.com/TheMuppets/proprietary_vendor_motorola_sm6375-common sm6375-common
 ```
 
+**Clone MindTheGapps**
+```bash
+# baklava for android 16
+git clone https://gitlab.com/MindTheGapps/vendor_gapps.git -b baklava vendor/gapps
+```
+
 **Preparing the build environment**
 ```bash
 cd ~/android/lineage
