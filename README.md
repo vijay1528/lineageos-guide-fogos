@@ -123,26 +123,34 @@ Enable color display in this user account (y/N)? type `y` then `enter`
 repo sync
 ```
 
-**Get/Extract proprietary blobs**
-* Note: you can go through official methods from [LineageOS](https://wiki.lineageos.org/devices/fogos/build/variant2/#extract-proprietary-blobs)
-* But in this guide im using [fogos](https://github.com/TheMuppets/proprietary_vendor_motorola_fogos) and [sm6375-common](https://github.com/TheMuppets/proprietary_vendor_motorola_sm6375-common) managed by his highness [mikeNG](https://github.com/mikeNG)
+## Get Device Sources/Trees
 
 ```bash
-mkdir -p ~/android/lineage/vendor/motorola
-```
-```bash
-cd ~/android/lineage/vendor/motorola
-git clone -b lineage-22.2 https://github.com/TheMuppets/proprietary_vendor_motorola_fogos fogos
-```
-```bash
-cd ~/android/lineage/vendor/motorola
-git clone -b lineage-22.2 https://github.com/TheMuppets/proprietary_vendor_motorola_sm6375-common sm6375-common
+cd ~/android/lineage
+
+# Device tree
+git clone -b main https://github.com/Fogos-Fuckers/android_device_motorola_fogos device/motorola/fogos
+git clone -b main https://github.com/Fogos-Fuckers/android_device_motorola_sm6375-common device/motorola/sm6375-common
+
+# Hardware
+git clone -b main https://github.com/Fogos-Fuckers/android_hardware_motorola hardware/motorola
+
+# Kernel
+git clone -b main https://github.com/Fogos-Fuckers/android_kernel_motorola_sm6375 kernel/motorola/sm6375
+
+# Vendors
+git clone -b main https://github.com/Fogos-Fuckers/proprietary_vendor_motorola_fogos vendor/motorola/fogos
+git clone -b lineage-23.0 https://github.com/Fogos-Fuckers/proprietary_vendor_motorola_sm6375-common vendor/motorola/sm6375-common
 ```
 
-**Clone MindTheGapps**
+**MindTheGapps**
 ```bash
 # baklava for android 16
-git clone https://gitlab.com/MindTheGapps/vendor_gapps.git -b baklava vendor/gapps
+git clone -b baklava https://gitlab.com/MindTheGapps/vendor_gapps.git vendor/gapps
+```
+**Moto Dolby**
+```bash
+git clone -b moto-1.0 https://github.com/vijay1528/hardware_dolby hardware/dolby
 ```
 
 **Preparing the build environment**
