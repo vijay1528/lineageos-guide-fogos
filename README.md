@@ -101,12 +101,12 @@ ccache -o compression=true
 ```
 
 ## Initialize the LineageOS source repository
-* Note: this is for lineage ver 22.2
+* Note: this is for lineage ver 23.0
 
 ```bash
 mkdir -p ~/android/lineage
 cd ~/android/lineage
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs --no-clone-bundle
+repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs --no-clone-bundle
 ```
 Enable color display in this user account (y/N)? type `y` then `enter`
 
