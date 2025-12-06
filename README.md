@@ -159,6 +159,7 @@ git clone -b 16.0 https://github.com/Fogos-Fuckers/android_hardware_dolby hardwa
 **Samsung NFC**
 ```bash
 git clone https://github.com/LineageOS/android_hardware_samsung_slsi_nfc.git hardware/samsung_slsi/nfc
+```
 
 **Preparing the build environment**
 ```bash
