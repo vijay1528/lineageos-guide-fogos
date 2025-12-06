@@ -156,6 +156,9 @@ git clone -b baklava https://gitlab.com/MindTheGapps/vendor_gapps.git vendor/gap
 ```bash
 git clone -b 16.0 https://github.com/Fogos-Fuckers/android_hardware_dolby hardware/dolby
 ```
+**Samsung NFC**
+```bash
+git clone https://github.com/LineageOS/android_hardware_samsung_slsi_nfc.git hardware/samsung_slsi/nfc
 
 **Preparing the build environment**
 ```bash
