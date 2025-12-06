@@ -143,6 +143,10 @@ git clone -b main https://github.com/Fogos-Fuckers/proprietary_vendor_motorola_f
 git clone -b lineage-23.0 https://github.com/Fogos-Fuckers/proprietary_vendor_motorola_sm6375-common vendor/motorola/sm6375-common
 ```
 
+**Get Motcamera4.apk**
+```bash
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1ds9nb4VTSkOo1oXbz-qiWxO9cdOn3IK6" -O ~/android/lineage/vendor/motorola/fogos/proprietary/product/priv-app/MotCamera4/MotCamera4.apk
+```
 **MindTheGapps**
 ```bash
 # baklava for android 16
