@@ -154,7 +154,7 @@ git clone -b baklava https://gitlab.com/MindTheGapps/vendor_gapps.git vendor/gap
 ```
 **Moto Dolby**
 ```bash
-git clone -b moto-1.0 https://github.com/vijay1528/hardware_dolby hardware/dolby
+git clone -b 16.0-motoui https://github.com/Fogos-Fuckers/android_hardware_dolby hardware/dolby
 ```
 
 **Preparing the build environment**
